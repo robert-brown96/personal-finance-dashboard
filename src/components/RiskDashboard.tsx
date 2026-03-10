@@ -96,7 +96,7 @@ export function RiskDashboard({
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <Card className="col-span-1 md:col-span-2 border-primary/10 shadow-lg shadow-primary/5 bg-gradient-to-br from-card to-card/50">
+        <Card className="col-span-1 md:col-span-2 border-primary/10 shadow-lg shadow-primary/5 bg-linear-to-br from-card to-card/50">
           <CardHeader>
             <CardTitle>Growth Projection</CardTitle>
             <CardDescription>
@@ -153,7 +153,7 @@ export function RiskDashboard({
         </Card>
 
         <div className="space-y-6 flex flex-col">
-          <Card className="flex-1 border-primary/10 shadow-lg shadow-primary/5 bg-gradient-to-br from-card to-card/50">
+          <Card className="flex-1 border-primary/10 shadow-lg shadow-primary/5 bg-linear-to-br from-card to-card/50">
             <CardHeader>
               <CardTitle>Investment Summary</CardTitle>
               <CardDescription>Based on $10,000 initial principal</CardDescription>
@@ -195,7 +195,7 @@ export function RiskDashboard({
                 </div>
                 <div className="flex justify-between items-center pt-4 border-t">
                   <span className="font-semibold">Projected Value</span>
-                  <span className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent">
+                  <span className="text-2xl font-bold bg-linear-to-r from-primary to-blue-500 bg-clip-text text-transparent">
                     {formatCurrency(finalValue)}
                   </span>
                 </div>

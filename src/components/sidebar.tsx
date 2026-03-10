@@ -42,7 +42,7 @@ export function Sidebar() {
     <div className="flex h-full w-64 flex-col gap-4 border-r bg-card/50 backdrop-blur-xl p-4 data-[state=collapsed]:w-16">
       <div className="flex h-[60px] items-center gap-2 px-2 font-semibold">
         <LineChart className="h-6 w-6 text-primary" />
-        <span className="text-lg bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent">
+        <span className="text-lg bg-linear-to-r from-primary to-blue-500 bg-clip-text text-transparent">
           RiskDash
         </span>
       </div>
