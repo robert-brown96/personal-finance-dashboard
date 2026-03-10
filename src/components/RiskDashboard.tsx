@@ -171,12 +171,11 @@ export function RiskDashboard({
                     min={1}
                     max={40}
                     step={1}
-                    onValueChange={(vals) => {
-                      if (Array.isArray(vals)) {
-                        setYears(vals[0]);
-                      }
+                    onValueChange={(vals: number | readonly number[]) => {
+                      const newYear = Array.isArray(vals) ? vals[0] : (typeof vals === 'number' ? vals : 10);
+                      setYears(newYear);
                     }}
-                    className="py-4"
+                    className="py-4 cursor-pointer"
                   />
                 )}
                 <div className="flex justify-between text-xs text-muted-foreground mt-1">
